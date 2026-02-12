@@ -2,10 +2,9 @@ import type { NextConfig } from "next";
 import withPWAInit from "@ducanh2912/next-pwa";
 
 const withPWA = withPWAInit({
-  dest: "public", // This puts sw.js in the public folder
-  register: true, // Auto-register the service worker
-  skipWaiting: true, // Updates the app immediately when you deploy new code
-  disable: process.env.NODE_ENV === "development", // Only disable in dev, ENABLE in prod
+  dest: "public",
+  disable: process.env.NODE_ENV === "development",
+  // deleted 'skipWaiting' and 'register' to fix the build error
 });
 
 const nextConfig: NextConfig = {
@@ -14,7 +13,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       { protocol: 'https', hostname: 'm.media-amazon.com' },
       { protocol: 'https', hostname: 'ia.media-imdb.com' },
-      { protocol: 'https', hostname: 'placehold.co' }, 
+      { protocol: 'https', hostname: 'placehold.co' },
     ],
   },
   compiler: {
