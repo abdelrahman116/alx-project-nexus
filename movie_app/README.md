@@ -10,7 +10,7 @@ A high-performance **Movie Recommendation Progressive Web App (PWA)** built as t
 This application features dynamic routing, real-time API integration, local state management for favorites, and a fully responsive interface optimized for mobile and desktop.
 
 ## 🚀 Live Demo
-
+> **[View Live Demo on Neltify](https://movieli.netlify.app)** 
 ## ✨ Key Features
 
 - **🔎 Smart Search & Discovery**:
