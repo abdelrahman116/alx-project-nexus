@@ -44,7 +44,7 @@ This application features dynamic routing, real-time API integration, local stat
 - **Styling**: CSS Modules & Styled Components
 - **Data Source**: OMDb API
 - **State Management**: React Hooks (`useState`, `useEffect`, `useCallback`)
-- **Deployment**: Vercel
+- **Deployment**: Netlify
 
 ## 📦 Getting Started
 
